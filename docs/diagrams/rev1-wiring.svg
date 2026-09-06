@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1950" viewBox="0 0 1440 1950" role="img" aria-labelledby="title desc">
+<title id="title">Altoids MP3 — Revision 1 wiring map</title>
+<desc id="desc">Logical map of supplied prototype connections. Battery through charger battery terminals and switch to a five volt converter; KB2040 TX through one kiloohm to DFPlayer RX, RX to TX; I2C display at 3.3 volts; right D2, up D3, down D4, left D5; DAC left to tip and right to ring. Grounds shared. Button returns and exact power module details remain unconfirmed.</desc>
+<rect x="0" y="0" width="1440" height="1950" rx="0" fill="#f3f6fa" stroke="#f3f6fa"/>
+<rect x="0" y="0" width="1440" height="155" rx="0" fill="#102238" stroke="#102238"/>
+<text x="60" y="42" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#73d5d0" text-anchor="start">REVISION 1  /  HAND-WIRED PROTOTYPE</text>
+<text x="60" y="94" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="start">Altoids MP3</text>
+<text x="60" y="130" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#c8d5e7" text-anchor="start">Wiring reference · Supplied connections · Enclosure not yet made</text>
+<text x="60" y="205" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#52647a" text-anchor="start">POWER</text>
+<rect x="60" y="230" width="250" height="165" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="80" y="267" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#15263d" text-anchor="start">LiPo battery</text>
+<text x="80" y="303" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#15263d" text-anchor="start">3.7 V nominal</text>
+<text x="80" y="348" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#ba4d38" text-anchor="start">+ battery node</text>
+<rect x="365" y="230" width="330" height="165" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="385" y="267" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#15263d" text-anchor="start">Battery charger*</text>
+<text x="385" y="303" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#15263d" text-anchor="start">BAT+ / battery +</text>
+<text x="385" y="335" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#52647a" text-anchor="start">USB 5V is a separate net</text>
+<text x="385" y="374" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#52647a" text-anchor="start">Battery side stays connected</text>
+<rect x="750" y="230" width="225" height="165" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="770" y="267" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#15263d" text-anchor="start">On/off switch</text>
+<text x="770" y="308" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#15263d" text-anchor="start">Terminal 1 → 2</text>
+<text x="770" y="374" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#52647a" text-anchor="start">Builder’s numbering</text>
+<rect x="1030" y="230" width="350" height="165" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="1050" y="267" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#15263d" text-anchor="start">5 V converter*</text>
+<text x="1050" y="303" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#15263d" text-anchor="start">VIN+ ← switch terminal 2</text>
+<text x="1050" y="340" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#ba4d38" text-anchor="start">VOUT+ → KB2040 RAW</text>
+<text x="1050" y="372" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#ba4d38" text-anchor="start">VOUT+ → DFPlayer VCC (1)</text>
+<path d="M310 307 L365 307" fill="none" stroke="#ba4d38" stroke-width="3"/>
+<path d="M695 307 L750 307" fill="none" stroke="#ba4d38" stroke-width="3"/>
+<path d="M975 307 L1030 307" fill="none" stroke="#ba4d38" stroke-width="3"/>
+<rect x="60" y="415" width="1320" height="110" rx="12" fill="#e6edf5" stroke="#d4dce6"/>
+<text x="80" y="446" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#52647a" text-anchor="start">COMMON GND</text>
+<text x="275" y="446" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#15263d" text-anchor="start">Battery − · charger battery − · converter VIN− · KB GND · display GND</text>
+<text x="275" y="478" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#15263d" text-anchor="start">DFPlayer GND (7 and 10) · audio sleeve</text>
+<text x="80" y="510" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#785618" text-anchor="start">Converter VOUT− also needs a return to this net; exact routing / internal connection still to confirm.</text>
+<rect x="60" y="560" width="400" height="830" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="85" y="604" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#15263d" text-anchor="start">Adafruit KB2040</text>
+<text x="85" y="635" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#52647a" text-anchor="start">Board labels</text>
+<rect x="1020" y="560" width="360" height="230" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="1042" y="604" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#15263d" text-anchor="start">DFPlayer Mini</text>
+<path d="M460 682 L1020 682" fill="none" stroke="#7556b4" stroke-width="3"/>
+<circle cx="460" cy="682" r="5" fill="#7556b4"/>
+<circle cx="1020" cy="682" r="5" fill="#7556b4"/>
+<text x="435" y="689" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">TX / D0</text>
+<text x="1042" y="689" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">RX · pin 2</text>
+<text x="740" y="649" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#7556b4" text-anchor="middle">Commands →</text>
+<rect x="653" y="664" width="110" height="36" rx="4" fill="#f3f6fa" stroke="#7556b4"/>
+<text x="708" y="689" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7556b4" text-anchor="middle">1 kΩ</text>
+<path d="M460 749 L1020 749" fill="none" stroke="#7556b4" stroke-width="3"/>
+<circle cx="460" cy="749" r="5" fill="#7556b4"/>
+<circle cx="1020" cy="749" r="5" fill="#7556b4"/>
+<text x="435" y="756" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">RX / D1</text>
+<text x="1042" y="756" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">TX · pin 3</text>
+<text x="740" y="736" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#7556b4" text-anchor="middle">← Responses</text>
+<rect x="1020" y="820" width="360" height="250" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="1042" y="861" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#15263d" text-anchor="start">I²C display</text>
+<path d="M460 912 L1020 912" fill="none" stroke="#187c88" stroke-width="3"/>
+<circle cx="460" cy="912" r="5" fill="#187c88"/>
+<circle cx="1020" cy="912" r="5" fill="#187c88"/>
+<text x="435" y="919" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">SDA</text>
+<text x="1042" y="919" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">SDA</text>
+<text x="740" y="899" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#187c88" text-anchor="middle">I²C connector · data</text>
+<path d="M460 980 L1020 980" fill="none" stroke="#187c88" stroke-width="3"/>
+<circle cx="460" cy="980" r="5" fill="#187c88"/>
+<circle cx="1020" cy="980" r="5" fill="#187c88"/>
+<text x="435" y="987" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">SCL</text>
+<text x="1042" y="987" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">SCK / SCL</text>
+<text x="740" y="967" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#187c88" text-anchor="middle">I²C connector · clock</text>
+<path d="M460 1041 L1020 1041" fill="none" stroke="#ba4d38" stroke-width="3"/>
+<circle cx="460" cy="1041" r="5" fill="#ba4d38"/>
+<circle cx="1020" cy="1041" r="5" fill="#ba4d38"/>
+<text x="435" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">3V / 3.3 V</text>
+<text x="1042" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">VCC</text>
+<text x="740" y="1028" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#ba4d38" text-anchor="middle">I²C connector · 3.3 V</text>
+<rect x="1020" y="1100" width="360" height="290" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="1042" y="1142" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#15263d" text-anchor="start">D-pad</text>
+<path d="M460 1192 L1020 1192" fill="none" stroke="#356ed8" stroke-width="3"/>
+<circle cx="460" cy="1192" r="5" fill="#356ed8"/>
+<circle cx="1020" cy="1192" r="5" fill="#356ed8"/>
+<text x="435" y="1199" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">D2</text>
+<text x="1042" y="1199" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">RIGHT</text>
+<path d="M460 1249 L1020 1249" fill="none" stroke="#356ed8" stroke-width="3"/>
+<circle cx="460" cy="1249" r="5" fill="#356ed8"/>
+<circle cx="1020" cy="1249" r="5" fill="#356ed8"/>
+<text x="435" y="1256" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">D3</text>
+<text x="1042" y="1256" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">UP</text>
+<path d="M460 1306 L1020 1306" fill="none" stroke="#356ed8" stroke-width="3"/>
+<circle cx="460" cy="1306" r="5" fill="#356ed8"/>
+<circle cx="1020" cy="1306" r="5" fill="#356ed8"/>
+<text x="435" y="1313" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">D4</text>
+<text x="1042" y="1313" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">DOWN</text>
+<path d="M460 1363 L1020 1363" fill="none" stroke="#356ed8" stroke-width="3"/>
+<circle cx="460" cy="1363" r="5" fill="#356ed8"/>
+<circle cx="1020" cy="1363" r="5" fill="#356ed8"/>
+<text x="435" y="1370" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="end">D5</text>
+<text x="1042" y="1370" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#15263d" text-anchor="start">LEFT</text>
+<text x="85" y="1330" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ba4d38" text-anchor="start">RAW ← converter 5 V</text>
+<text x="85" y="1365" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#52647a" text-anchor="start">G / GND → common GND</text>
+<rect x="510" y="1110" width="450" height="66" rx="9" fill="#fff4db" stroke="#dfc78e"/>
+<text x="735" y="1137" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#785618" text-anchor="middle">Button signal assignments only.</text>
+<text x="735" y="1161" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#785618" text-anchor="middle">Return contacts / pull configuration unconfirmed.</text>
+<text x="60" y="1445" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#52647a" text-anchor="start">STEREO AUDIO</text>
+<rect x="60" y="1470" width="1320" height="285" rx="15" fill="#ffffff" stroke="#d4dce6"/>
+<text x="85" y="1515" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#15263d" text-anchor="start">DFPlayer Mini</text>
+<text x="1035" y="1515" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#15263d" text-anchor="start">Stereo TRS jack</text>
+<text x="85" y="1577" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">DAC_L · pin 5</text>
+<path d="M405 1570 L1005 1570" fill="none" stroke="#187c88" stroke-width="3"/>
+<circle cx="405" cy="1570" r="5" fill="#187c88"/>
+<circle cx="1005" cy="1570" r="5" fill="#187c88"/>
+<text x="1035" y="1577" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">TIP · left</text>
+<text x="85" y="1647" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">DAC_R · pin 4</text>
+<path d="M405 1640 L1005 1640" fill="none" stroke="#7556b4" stroke-width="3"/>
+<circle cx="405" cy="1640" r="5" fill="#7556b4"/>
+<circle cx="1005" cy="1640" r="5" fill="#7556b4"/>
+<text x="1035" y="1647" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">RING · right</text>
+<text x="85" y="1717" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">GND · pins 7 + 10</text>
+<path d="M405 1710 L1005 1710" fill="none" stroke="#52647a" stroke-width="3"/>
+<circle cx="405" cy="1710" r="5" fill="#52647a"/>
+<circle cx="1005" cy="1710" r="5" fill="#52647a"/>
+<text x="1035" y="1717" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#15263d" text-anchor="start">SLEEVE · ground</text>
+<text x="705" y="1695" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#52647a" text-anchor="middle">Also connected to common GND</text>
+<rect x="60" y="1790" width="1320" height="117" rx="12" fill="#fff4db" stroke="#dfc78e"/>
+<text x="82" y="1821" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#785618" text-anchor="start">* Power module identity and exact terminals need confirmation.</text>
+<text x="82" y="1851" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#785618" text-anchor="start">3.7 V → 5 V requires boost / buck-boost conversion. Audio socket lug order is not shown.</text>
+<text x="82" y="1881" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#785618" text-anchor="start">This is a logical map, not a physical footprint. See docs/pinout.md for all module pins and open details.</text>
+<text x="60" y="1933" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#52647a" text-anchor="start">Based on the builder’s Rev 1 notes · Pin labels checked against Adafruit and DFRobot references</text>
+</svg>
