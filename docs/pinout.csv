@@ -1,0 +1,27 @@
+section,from,to,signal,status_or_note
+power,Battery +,Charger battery +,Battery node,"Builder supplied; battery side, not USB 5V"
+power,Battery -,Charger battery - / GND,Ground,Builder supplied
+power,Battery/charger negative,Common GND,Ground,Builder supplied
+power,Battery/charger negative,Converter VIN-,Ground,Builder supplied
+power,Battery/charger positive,Switch terminal 1,Battery node,Builder supplied; numbering is project-specific
+power,Switch terminal 2,Converter VIN+,Switched battery,Builder supplied
+power,Converter VOUT+,DFPlayer VCC (pin 1),5 V,Builder supplied; measure converter output
+power,Converter VOUT+,KB2040 RAW,5 V,Builder supplied; USB power routing still to confirm
+power,KB2040 GND,Common GND,Ground,Builder supplied
+power,Converter VOUT-,Common GND,Output return,Required return; exact routing/internal commonality unconfirmed
+UART,KB2040 TX/D0,DFPlayer RX (pin 2),Serial commands,Builder supplied; 1 kOhm series resistor
+UART,DFPlayer TX (pin 3),KB2040 RX/D1,Serial responses,Builder supplied
+D-pad,Left signal contact,KB2040 D5,Input,Builder supplied
+D-pad,Down signal contact,KB2040 D4,Input,Builder supplied
+D-pad,Up signal contact,KB2040 D3,Input,Builder supplied
+D-pad,Right signal contact,KB2040 D2,Input,Builder supplied
+D-pad,Button return contacts,Unspecified,Return,Not supplied; common GND and pull configuration need confirmation
+display,KB2040 GND (I2C connector),Display GND,Ground,Builder supplied
+display,KB2040 3.3 V (I2C connector),Display VCC,3.3 V,Builder supplied
+display,KB2040 SDA (I2C connector),Display SDA,I2C data,Builder supplied
+display,KB2040 SCL (I2C connector),Display SCK/SCL,I2C clock,Builder supplied
+audio,DFPlayer DAC_L (pin 5),Audio jack left / tip,Left audio,"Builder supplied L; tip is standard TRS naming, lug unverified"
+audio,DFPlayer DAC_R (pin 4),Audio jack right / ring,Right audio,"Builder supplied R; ring is standard TRS naming, lug unverified"
+audio,DFPlayer GND (pin 7),Common GND,Ground,Builder specifies both DFPlayer GND pins
+audio,DFPlayer GND (pin 10),Common GND,Ground,Builder specifies both DFPlayer GND pins
+audio,Audio jack ground / sleeve,Common GND,Audio return,"Builder supplied ground; sleeve is standard TRS naming, lug unverified"
